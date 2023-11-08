@@ -30,6 +30,9 @@ COPY rootfs/ /
 RUN mkdir /opt/mydir
 # Copy zip files to /opt directory
 COPY *.gz /opt/mydir/
+RUN mkdir /apps
+RUN mkdir /apps/python
+COPY *.png /apps/python/
 
 SHELL ["/bin/bash", "-c"]
 
