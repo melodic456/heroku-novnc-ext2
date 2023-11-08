@@ -57,7 +57,7 @@ RUN	apt-get update && \
 	ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
 	echo $TZ > /etc/timezone && \
 #Python MOdules
-	pip3 install requests && \
+	pip3 install requests opencv-python pyautogui && \
 #Wipe Temp Files
 	rm -rf /var/lib/apt/lists/* && \ 
 	apt-get remove -y wget python3-pip unzip && \
